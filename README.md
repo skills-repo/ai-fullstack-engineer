@@ -1,0 +1,76 @@
+# AI 全栈应用工程师技能库 (ai-fullstack-engineer)
+
+> AI Agent Skills for AI Full-Stack Application Engineers —— API 设计、数据库、后端架构、FastAPI 开发、前端组件、CSS 布局、Web 性能、浏览器调试，外加一条 AI-native 全栈工作流。
+
+本仓库由 `backend-developer` 与 `frontend-engineer` 整合而来，采用 **superpower 架构**：`SKILL.md` 只做路由，深层方法论放 `references/`，细粒度能力放 `skills/`，确定性任务放 `scripts/`，可复用模板放 `assets/`。
+
+## 定位
+
+为独立开发者与个人/小团队提供「一个人扛下整条应用交付链路」的 AI 技能：从后端 API、数据库、架构，到前端组件、样式、性能与调试，并用 AI-native 工作流把前后端打通成一条流水线。
+
+核心理念：
+
+> 好的全栈不只是「能跑」——契约要稳定、类型要安全、UI 要快、代码要可维护。
+
+- **契约优先** — 先定 OpenAPI，前后端并行
+- **类型安全** — 从契约生成 TS 类型，编译期拦截联调摩擦
+- **脚手架即基线** — 一键产出可运行骨架，把搭环境从 hours 降到 minutes
+- **AI 辅助调试** — 浏览器自动化把调试变成可复现脚本
+
+## 能力清单
+
+| 维度 | 子技能 | 描述 | 来源 |
+|------|--------|------|------|
+| 设计 | `api-design` | REST/GraphQL 接口稳定性、版本、错误处理 | [衍生](https://skills.sh/addyosmani/agent-skills/api-and-interface-design) |
+| 架构 | `backend-patterns` | Node/Express 模式、数据库优化、安全 | [衍生](https://skills.sh/affaan-m/everything-claude-code/backend-patterns) |
+| 数据 | `database-design` | Schema、索引、ORM 选型、迁移 | [衍生](https://skills.sh/sickn33/antigravity-awesome-skills/database-design) |
+| 开发 | `fastapi-python` | FastAPI 异步、Pydantic、DI、测试 | [衍生](https://skills.sh/mindrally/skills/fastapi-python) |
+| 组件 | `component-builder` | 现代 Web 组件、React/Vue 适配 | [衍生](https://skills.sh/googlechrome/modern-web-guidance/modern-web-guidance) |
+| 样式 | `css-master` | Tailwind Grid/Flexbox/容器查询 | [衍生](https://skills.sh/josiahsiegel/claude-plugin-marketplace/tailwindcss-advanced-layouts) |
+| 性能 | `web-performance` | Core Web Vitals、bundle、缓存 | [衍生](https://skills.sh/sickn33/antigravity-awesome-skills/web-performance-optimization) |
+| 调试 | `browser-devtools` | Chrome DevTools 自动化审计 | [衍生](https://skills.sh/kunchenguid/chrome-devtools-axi/chrome-devtools-axi) |
+
+## 快速开始
+
+```bash
+# 生成全栈骨架（后端 fastapi + 前端 react）
+python3 scripts/scaffold_fullstack.py --name my-saas --be fastapi --fe react
+
+# 从 OpenAPI 生成前端类型（类型安全联调）
+python3 scripts/gen_types_from_openapi.py --spec openapi.json --out src/api/types.ts
+```
+
+## 推荐工作流
+
+```
+需求/领域模型 → 契约优先(OpenAPI) → 脚手架 → 前后端并行
+   → 类型安全联调 → AI 辅助调试(DevTools) → 性能/质量门禁 → 交付(compose+CI)
+```
+
+详见 `references/fullstack-workflow.md`。
+
+## 目录结构
+
+```
+ai-fullstack-engineer/
+├── SKILL.md                     # 超级路由
+├── AGENTS.md                    # Agent 入口
+├── references/                  # 深层 playbook（按需加载）
+│   ├── fullstack-workflow.md
+│   ├── backend-playbook.md
+│   └── frontend-playbook.md
+├── skills/                      # 细粒度子技能
+│   ├── api-design/  backend-patterns/  database-design/  fastapi-python/
+│   └── component-builder/  css-master/  web-performance/  browser-devtools/
+├── scripts/                     # 确定性脚本
+│   ├── scaffold_fullstack.py
+│   └── gen_types_from_openapi.py
+└── assets/                      # 模板
+    ├── openapi-spec-template.yaml
+    ├── docker-compose.fullstack.yaml
+    └── ci-fullstack.yml
+```
+
+## 许可
+
+MIT
