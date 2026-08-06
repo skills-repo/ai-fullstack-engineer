@@ -30,6 +30,33 @@
 | 性能 | `web-performance` | Core Web Vitals、bundle、缓存 | [衍生](https://skills.sh/sickn33/antigravity-awesome-skills/web-performance-optimization) |
 | 调试 | `browser-devtools` | Chrome DevTools 自动化审计 | [衍生](https://skills.sh/kunchenguid/chrome-devtools-axi/chrome-devtools-axi) |
 
+## 安装
+
+### 安装完整技能库（推荐，含 references / scripts / assets）
+
+```bash
+npx skills add skills-repo/ai-fullstack-engineer -g -y
+```
+
+### 只安装某个细粒度子技能
+
+```bash
+# 后端侧
+npx skills add skills-repo/ai-fullstack-engineer@api-design -g -y
+npx skills add skills-repo/ai-fullstack-engineer@backend-patterns -g -y
+npx skills add skills-repo/ai-fullstack-engineer@database-design -g -y
+npx skills add skills-repo/ai-fullstack-engineer@fastapi-python -g -y
+
+# 前端侧
+npx skills add skills-repo/ai-fullstack-engineer@component-builder -g -y
+npx skills add skills-repo/ai-fullstack-engineer@css-master -g -y
+npx skills add skills-repo/ai-fullstack-engineer@web-performance -g -y
+npx skills add skills-repo/ai-fullstack-engineer@browser-devtools -g -y
+```
+
+> 只装子技能不会带上 `references/`、`scripts/`、`assets/`。需要脚手架脚本与全栈工作流
+> playbook 时，请安装完整技能库。
+
 ## 快速开始
 
 ```bash
