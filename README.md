@@ -31,6 +31,7 @@
 | 调试 | `browser-devtools` | Chrome DevTools 自动化审计 | [衍生](https://skills.sh/kunchenguid/chrome-devtools-axi/chrome-devtools-axi) |
 | 框架 | `nextjs-app-router` | Next.js App Router：布局/页面、服务端/客户端组件、路由处理器、数据缓存 | [原创](https://github.com/skills-repo/ai-fullstack-engineer) |
 | 样式审计 | `tailwind-audit` | Tailwind 体检：未用类/purge、v3→v4 迁移、配置漂移、冲突类名、@apply 滥用 | [原创](https://github.com/skills-repo/ai-fullstack-engineer) |
+| 多智能体 | `multi-agent-orchestration` | 多 Agent 协作编排：角色定义、编排模式（顺序/并行/层次/共识）、框架速选、通信与结果聚合 | [衍生](https://skills.sh/qodex-ai/ai-agent-skills/multi-agent-orchestration) |
 
 ## 安装
 
@@ -56,6 +57,7 @@ npx skills add skills-repo/ai-fullstack-engineer@web-performance -g -y
 npx skills add skills-repo/ai-fullstack-engineer@browser-devtools -g -y
 npx skills add skills-repo/ai-fullstack-engineer@nextjs-app-router -g -y
 npx skills add skills-repo/ai-fullstack-engineer@tailwind-audit -g -y
+npx skills add skills-repo/ai-fullstack-engineer@multi-agent-orchestration -g -y
 ```
 
 > 只装子技能不会带上 `references/`、`scripts/`、`assets/`。需要脚手架脚本与全栈工作流
@@ -91,11 +93,12 @@ ai-fullstack-engineer/
 │   ├── backend-playbook.md
 │   ├── frontend-playbook.md
 │   ├── nextjs-app-router-playbook.md
-│   └── tailwind-audit-playbook.md
+│   ├── tailwind-audit-playbook.md
+│   └── multi-agent-orchestration-playbook.md
 ├── skills/                      # 细粒度子技能
 │   ├── api-design/  backend-patterns/  database-design/  fastapi-python/
 │   ├── component-builder/  css-master/  web-performance/  browser-devtools/
-│   └── nextjs-app-router/  tailwind-audit/
+│   └── nextjs-app-router/  tailwind-audit/  multi-agent-orchestration/
 ├── scripts/                     # 确定性脚本
 │   ├── scaffold_fullstack.py
 │   └── gen_types_from_openapi.py

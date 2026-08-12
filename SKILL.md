@@ -32,6 +32,7 @@ metadata:
 - 需要**优化 Web 性能**（Core Web Vitals、bundle、缓存、运行时）
 - 需要**用 Chrome DevTools 自动化**调试、截图、性能审计
 - 需要**审计 Tailwind CSS**（未用类/purge、v3→v4 迁移、配置漂移、冲突类名）
+- 需要把复杂任务拆成**多个专职 Agent 协作**（多智能体编排 / orchestrator / 子 Agent 流水线）
 - 需要**一键生成全栈脚手架**、从 OpenAPI 生成类型安全的 TS 客户端
 - 需要一条** AI-native 全栈工作流**把前后端并联交付
 
@@ -44,6 +45,7 @@ metadata:
 | AI-native 全栈工作流（脚手架→契约→并行→联调→部署） | `references/fullstack-workflow.md` | 全栈, workflow, 脚手架, 联调, 类型安全, 并行, AI 工作流 |
 | 后端深度 playbook（API + 架构模式 + 数据 + FastAPI） | `references/backend-playbook.md` | 后端, api, 架构, orm, 索引, fastapi, 异步, repository |
 | 前端深度 playbook（组件 + CSS + 调试 + 性能） | `references/frontend-playbook.md` | 前端, 组件, css, grid, 性能, cwv, devtools, 响应式 |
+| 多智能体编排 playbook（决策树 + 框架选型 + 通信 + 踩坑清单） | `references/multi-agent-orchestration-playbook.md` | 多智能体, 编排, 决策树, crewai, langgraph, autogen, swarm, 通信, 聚合, 踩坑 |
 | API 与接口设计（细粒度调用） | `skills/api-design/SKILL.md` | rest, graphql, 版本, 错误码, openapi, 契约 |
 | 后端架构模式（细粒度调用） | `skills/backend-patterns/SKILL.md` | 分层, express, 中间件, 安全, 限流, circuit breaker |
 | 数据库设计（细粒度调用） | `skills/database-design/SKILL.md` | schema, 索引, 范式, 迁移, 主键, 软删除 |
@@ -54,6 +56,7 @@ metadata:
 | Chrome DevTools 自动化（细粒度调用） | `skills/browser-devtools/SKILL.md` | devtools, 截图, 快照, 审计, 自动化, lighthouse |
 | Next.js App Router 范式（细粒度调用） | `skills/nextjs-app-router/SKILL.md` | next.js, app router, 服务端组件, 客户端组件, 路由处理器, server action, 缓存, rsc |
 | Tailwind CSS 审计（细粒度调用） | `skills/tailwind-audit/SKILL.md` | tailwind, 审计, purge, 未用类, v3迁移, 配置漂移, 冲突类名, @apply |
+| 多智能体编排（细粒度调用） | `skills/multi-agent-orchestration/SKILL.md` | 多智能体, multi-agent, 编排, orchestrator, 子agent, 协作, crewai, langgraph, 共识, 并行 |
 
 > 路由规则：先判断任务属于「后端 / 前端 / 全栈流程」哪一类；先做方法论决策就读 `references/`，要落地某个具体技能就直接调 `skills/` 对应子技能。
 
