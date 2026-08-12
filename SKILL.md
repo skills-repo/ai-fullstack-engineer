@@ -4,7 +4,7 @@ description: >-
   AI 全栈应用工程师技能库：覆盖从 API 设计、数据库、后端架构、FastAPI 开发，到前端组件、CSS
   布局、Web 性能、浏览器调试的全链路能力，并内置 AI-native 全栈工作流（契约优先、前后端并行、类型安全、AI
   辅助调试与一键脚手架）。触发词："全栈"、"搭一个应用"、"前后端一起"、"设计 API"、"数据库
-  Schema"、"FastAPI"、"React/Vue 组件"、"CSS 布局"、"性能优化"、"Lighthouse"、"浏览器调试"、"脚手架"。
+  Schema"、"FastAPI"、"React/Vue 组件"、"CSS 布局"、"性能优化"、"Lighthouse"、"浏览器调试"、"脚手架"、"Next.js"、"App Router"。
 agent_created: true
 metadata:
   version: 1.0.0
@@ -28,6 +28,7 @@ metadata:
 - 需要**设计数据库 Schema**、选型 ORM、优化慢查询与索引
 - 需要用 **FastAPI / Node.js** 实现后端服务、依赖注入、异步 API
 - 需要开发 **React / Vue 组件**、用 Tailwind/CSS Grid 做响应式布局
+- 需要**用 Next.js（App Router）**搭建前端：布局/页面、服务端/客户端组件、路由处理器、数据缓存
 - 需要**优化 Web 性能**（Core Web Vitals、bundle、缓存、运行时）
 - 需要**用 Chrome DevTools 自动化**调试、截图、性能审计
 - 需要**一键生成全栈脚手架**、从 OpenAPI 生成类型安全的 TS 客户端
@@ -50,6 +51,7 @@ metadata:
 | Tailwind/CSS 高级布局（细粒度调用） | `skills/css-master/SKILL.md` | tailwind, grid, flexbox, 圣杯布局, 容器查询, 响应式 |
 | Web 性能优化（细粒度调用） | `skills/web-performance/SKILL.md` | lcp, inp, cls, bundle, 缓存, lighthouse, 代码分割 |
 | Chrome DevTools 自动化（细粒度调用） | `skills/browser-devtools/SKILL.md` | devtools, 截图, 快照, 审计, 自动化, lighthouse |
+| Next.js App Router 范式（细粒度调用） | `skills/nextjs-app-router/SKILL.md` | next.js, app router, 服务端组件, 客户端组件, 路由处理器, server action, 缓存, rsc |
 
 > 路由规则：先判断任务属于「后端 / 前端 / 全栈流程」哪一类；先做方法论决策就读 `references/`，要落地某个具体技能就直接调 `skills/` 对应子技能。
 
