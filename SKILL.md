@@ -46,6 +46,8 @@ metadata:
 | 后端深度 playbook（API + 架构模式 + 数据 + FastAPI） | `references/backend-playbook.md` | 后端, api, 架构, orm, 索引, fastapi, 异步, repository |
 | 前端深度 playbook（组件 + CSS + 调试 + 性能） | `references/frontend-playbook.md` | 前端, 组件, css, grid, 性能, cwv, devtools, 响应式 |
 | 多智能体编排 playbook（决策树 + 框架选型 + 通信 + 踩坑清单） | `references/multi-agent-orchestration-playbook.md` | 多智能体, 编排, 决策树, crewai, langgraph, autogen, swarm, 通信, 聚合, 踩坑 |
+| Next.js App Router 深度 playbook（渲染单元/数据接口/缓存/路由决策树 + 踩坑清单） | `references/nextjs-app-router-playbook.md` | next.js, app router, 服务端组件, 客户端组件, 路由处理器, server action, 缓存, rsc, 渲染单元, params, 静态渲染 |
+| Tailwind CSS 审计深度 playbook（体积/purge/v3→v4 迁移/配置漂移/冲突/@apply 决策树 + 踩坑清单） | `references/tailwind-audit-playbook.md` | tailwind, 审计, purge, 未用类, v3迁移, 配置漂移, 冲突类名, @apply, 体积, 动态类名, 暗色 |
 | API 与接口设计（细粒度调用） | `skills/api-design/SKILL.md` | rest, graphql, 版本, 错误码, openapi, 契约 |
 | 后端架构模式（细粒度调用） | `skills/backend-patterns/SKILL.md` | 分层, express, 中间件, 安全, 限流, circuit breaker |
 | 数据库设计（细粒度调用） | `skills/database-design/SKILL.md` | schema, 索引, 范式, 迁移, 主键, 软删除 |
