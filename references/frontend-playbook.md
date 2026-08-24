@@ -84,6 +84,22 @@ npx -y chrome-devtools-axi lighthouse http://localhost:5173   # 性能审计
 
 > 具体调用：`skills/browser-devtools`。
 
+## 5. 高频踩坑速查
+
+前端性能与兼容问题的共性是**指标好看但体感差**、或**本地正常线上崩**。下表按症状反查：
+
+| 现象 | 根因 | 修法 |
+|------|------|------|
+| 本地 Lighthouse 95，真实用户体感却很差 | 本地无网络/CPU 节流、有缓存、无第三方脚本 | 以移动端节流配置在 CI 跑；结论以 RUM/CrUX **字段数据**为准 |
+| LCP 元素就是首屏大图，却依然很慢 | 首屏图被 `loading="lazy"`，或要等 JS 组件挂载才发请求 | 首屏图去掉 lazy + `fetchpriority="high"`，必要时 `<link rel=preload>` |
+| 交互卡顿，但火焰图里找不到长函数 | 大量小任务串联 / 水合阻塞 / 受控输入触发全树重渲 | 拆分 hydration、`useDeferredValue` 或节流、隔离重渲子树 |
+| CLS 只在真机首次访问时出现 | 字体 swap 回流 + 图片未预留尺寸 | 显式 `width/height` 或 `aspect-ratio`；字体回退用 `size-adjust` 对齐度量 |
+| 加了 `content-visibility` 后滚动条乱跳 | 离屏内容未给尺寸提示，浏览器按 0 估算高度 | 补 `contain-intrinsic-size` 近似值 |
+| 容器查询写了却不生效 | 父级没声明 `container-type: inline-size` | 先在父容器建立 `@container` 上下文，再写 `@container` 查询 |
+| Chrome 正常、Safari 布局崩 | 只验证了单浏览器，`:has()` / anchor positioning 支持度不一致 | `@supports` 兜底 + devtools 跨设备模拟后再上线（见第 4 节） |
+| bundle 分析显示大库仍在主包里 | 同一模块既被 `import()` 又被静态引用；或 barrel file 把整库拉进来 | 去掉静态引用、按深路径导入、核对 `sideEffects` 配置 |
+| 生产环境 className 丢失、样式偶尔不生效 | Tailwind 动态拼接类名未被 `content` 扫描到 | 见 `references/tailwind-audit-playbook.md` 第 8 节（本表不重复） |
+
 ## 前端决策速查
 
 - 新组件前 → 先 `modern-web-guidance search`，优先原生 API。

@@ -134,6 +134,36 @@ app/
 项目初始化 → 模型设计(Pydantic→SQLAlchemy→迁移) → 路由开发(CRUD+DI+异常) → 中间件 → 测试
 ```
 
+## 5. 高频踩坑速查
+
+线上后端问题多数不是「不知道该怎么写」，而是**症状与根因错位**。下表按症状反查：
+
+| 现象 | 根因 | 修法 |
+|------|------|------|
+| 本地正常，线上偶发 500，日志只有 ORM 异常栈 | 唯一键/外键冲突未映射成业务错误，异常直接冒泡 | service 层捕获完整性错误 → 409 + 业务 code（错误体格式见第 1 节） |
+| 列表接口随数据量变慢，DB CPU 不高但查询数暴涨 | N+1：序列化时逐行懒加载关联对象 | 预加载（`selectinload` / `JOIN`）；测试里加 **SQL 查询数断言**防回归 |
+| 建了索引，`EXPLAIN` 仍走全表扫 | 条件列被函数包裹或类型不匹配（`lower(email)=`、字符串比数字），索引失效 | 建表达式索引，或让参数类型与列类型严格一致 |
+| 分页翻到深页越来越慢 | `OFFSET N` 需扫过并丢弃前 N 行 | 改 keyset/游标分页：`WHERE id < :last_id ORDER BY id DESC LIMIT n` |
+| 客户端超时重试后出现重复订单 | POST 无幂等键，重试产生第二条记录 | `Idempotency-Key` + 唯一索引；重复请求返回首次结果 |
+| 端点写了 `async def` 反而更慢 | 协程里调用同步阻塞 IO（`requests`、同步 ORM），阻塞事件循环 | 换 async 客户端；或退回 `def` 端点交线程池，或 `run_in_executor` |
+| 迁移本地秒过、生产锁表 | 大表 `ALTER`/加非空默认列触发全表重写与长事务锁 | 拆成「加可空列 → 分批回填 → 加约束」；并设 `lock_timeout` |
+| 改了响应模型但接口仍返回旧字段/多余字段 | 未声明 `response_model`，或直接返回 ORM 实例绕过序列化 | 显式声明 `response_model`，禁止直接返回 ORM 对象 |
+
+### 诊断命令
+
+```bash
+# 读执行计划：判断索引是否真的被用上
+psql -c "EXPLAIN (ANALYZE, BUFFERS) SELECT ...;"
+
+# 找最慢语句（需启用 pg_stat_statements）
+psql -c "SELECT mean_exec_time, calls, query FROM pg_stat_statements
+         ORDER BY mean_exec_time DESC LIMIT 10;"
+
+# 查长事务与阻塞——迁移锁表时的第一现场
+psql -c "SELECT pid, state, wait_event_type, now()-xact_start AS age, query
+         FROM pg_stat_activity WHERE state <> 'idle' ORDER BY age DESC;"
+```
+
 ## 后端决策速查
 
 - 新建 Python API → FastAPI + SQLAlchemy 2.0 async + Pydantic v2。
