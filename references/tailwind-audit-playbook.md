@@ -175,3 +175,12 @@ const map = { red: 'bg-red-500', blue: 'bg-blue-500' }
 | 同元素两种颜色都写了却只生效一个 | 后写的覆盖前一个（噪音） | 删冗余，用 lint/`twMerge` 去重 |
 | `bg-${c}-500` 不生效 | 静态 purge 看不见拼接字符串 | 用字面量映射或 `safelist` |
 | `container` 类升级后失效 | v4 默认移除 container | 改用 `@container` 或装 `@tailwindcss/container-queries` |
+
+---
+
+## 相关参考
+
+- 前端通用范式（含 Tailwind 集成）：`references/frontend-playbook.md`
+- 布局写法（非审计视角）：`skills/css-master`
+- 通用性能指标：`skills/web-performance`
+- 本 playbook 归属子技能：`skills/tailwind-audit`

@@ -137,3 +137,12 @@ middleware.ts           # 边缘中间件（项目根或 src/ 根）
 ```
 
 > 与 `ai-fullstack-engineer` 的契约优先工作流衔接：用 `scripts/scaffold_fullstack.py --fe react` 产出前端骨架后，若选定 Next.js，可按本 playbook 把 `app/` 结构补齐；API 契约仍由 `api-design` 子技能与 OpenAPI 类型生成保障前后端类型安全。
+
+---
+
+## 相关参考
+
+- 前端通用范式与组件/样式/性能落地：`references/frontend-playbook.md`
+- 契约优先工作流（前后端类型安全）：`references/fullstack-workflow.md`
+- 接口契约设计：`skills/api-design`
+- 本 playbook 归属子技能：`skills/nextjs-app-router`
