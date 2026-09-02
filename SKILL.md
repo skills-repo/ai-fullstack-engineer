@@ -31,6 +31,7 @@ metadata:
 - 需要**用 Next.js（App Router）**搭建前端：布局/页面、服务端/客户端组件、路由处理器、数据缓存
 - 需要**优化 Web 性能**（Core Web Vitals、bundle、缓存、运行时）
 - 需要**用 Chrome DevTools 自动化**调试、截图、性能审计
+- 需要**用自然语言驱动浏览器**做视觉自动化（选择器不稳定、只有截图、Canvas/富交互页面、抓取网页数据）
 - 需要**审计 Tailwind CSS**（未用类/purge、v3→v4 迁移、配置漂移、冲突类名）
 - 需要把复杂任务拆成**多个专职 Agent 协作**（多智能体编排 / orchestrator / 子 Agent 流水线）
 - 需要**一键生成全栈脚手架**、从 OpenAPI 生成类型安全的 TS 客户端
@@ -56,6 +57,7 @@ metadata:
 | Tailwind/CSS 高级布局（细粒度调用） | `skills/css-master/SKILL.md` | tailwind, grid, flexbox, 圣杯布局, 容器查询, 响应式 |
 | Web 性能优化（细粒度调用） | `skills/web-performance/SKILL.md` | lcp, inp, cls, bundle, 缓存, lighthouse, 代码分割 |
 | Chrome DevTools 自动化（细粒度调用） | `skills/browser-devtools/SKILL.md` | devtools, 截图, 快照, 审计, 自动化, lighthouse |
+| 视觉驱动浏览器自动化（细粒度调用） | `skills/ai-browser-automation/SKILL.md` | midscene, 视觉驱动, 自然语言, 抓取, 爬取, act, assert, cdp, bridge, 无选择器, 登录态 |
 | Next.js App Router 范式（细粒度调用） | `skills/nextjs-app-router/SKILL.md` | next.js, app router, 服务端组件, 客户端组件, 路由处理器, server action, 缓存, rsc |
 | Tailwind CSS 审计（细粒度调用） | `skills/tailwind-audit/SKILL.md` | tailwind, 审计, purge, 未用类, v3迁移, 配置漂移, 冲突类名, @apply |
 | 多智能体编排（细粒度调用） | `skills/multi-agent-orchestration/SKILL.md` | 多智能体, multi-agent, 编排, orchestrator, 子agent, 协作, crewai, langgraph, 共识, 并行 |

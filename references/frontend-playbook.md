@@ -84,6 +84,20 @@ npx -y chrome-devtools-axi lighthouse http://localhost:5173   # 性能审计
 
 > 具体调用：`skills/browser-devtools`。
 
+### 4.1 选型：DOM/CDP 驱动 vs 视觉驱动
+
+两条自动化路线的取舍，按**定位方式**而非工具偏好来选：
+
+| 判断条件 | 选择 |
+|---------|------|
+| DOM 结构稳定、要可复现脚本、要 Lighthouse/网络分析 | DOM/CDP 驱动 → `skills/browser-devtools` |
+| 要写进 CI 的正式 E2E 断言 | Playwright → `software-tester` 的 `e2e-testing` |
+| 选择器易变 / 只有截图作依据 / Canvas 与富交互 / 想用自然语言描述意图 | 视觉驱动 → `skills/ai-browser-automation` |
+
+代价对照：DOM/CDP 快且免费但依赖选择器稳定；视觉驱动抗结构变化但需多模态模型 API key、单步约 1 分钟且有调用成本。**先试 DOM/CDP，定位不住再上视觉驱动**，不要反过来。
+
+> 具体调用：`skills/ai-browser-automation`。
+
 ## 5. 高频踩坑速查
 
 前端性能与兼容问题的共性是**指标好看但体感差**、或**本地正常线上崩**。下表按症状反查：
