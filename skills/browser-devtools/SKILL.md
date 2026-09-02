@@ -54,3 +54,9 @@ metadata:
 - 需要 Chrome 浏览器
 - 不替代完整的 E2E 测试框架（Playwright/Cypress）
 - 复杂交互流程建议用专业工具
+
+## 相关参考（Playbook）
+
+本子技能落地"浏览器自动化调试"，前端方法论见下列 `references/`（按需读取）：
+
+- 前端深度 playbook（组件 / CSS / 调试 / 性能 / 水合踩坑）：`references/frontend-playbook.md`

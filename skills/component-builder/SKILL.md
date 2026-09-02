@@ -55,3 +55,9 @@ metadata:
 - 不涉及后端开发
 - 不涉及 CI/CD 和部署
 - 搜索结果需要人工判断适用性
+
+## 相关参考（Playbook）
+
+本子技能落地"现代 Web 组件与模式"，前端方法论见下列 `references/`（按需读取）：
+
+- 前端深度 playbook（组件 / 响应式 / 性能 / 踩坑速查）：`references/frontend-playbook.md`

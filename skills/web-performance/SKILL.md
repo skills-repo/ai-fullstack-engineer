@@ -54,3 +54,9 @@ metadata:
 - 不涉及后端性能优化（数据库、API）
 - 不涉及 CDN 服务商选择
 - 不涉及 Native App 性能
+
+## 相关参考（Playbook）
+
+本子技能落地"Web 性能优化"，前端方法论见下列 `references/`（按需读取）：
+
+- 前端深度 playbook（Core Web Vitals / bundle / 缓存 / 水合踩坑）：`references/frontend-playbook.md`

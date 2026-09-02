@@ -81,3 +81,10 @@ app/
 - WebSocket 支持有限（复杂场景建议用 Socket.IO）
 - ORM 推荐 SQLAlchemy 2.0 async，不覆盖 Tortoise/Peewee 等替代方案
 - 部署建议配合 Uvicorn + Gunicorn，不覆盖 Docker/K8s 编排
+
+## 相关参考（Playbook）
+
+本子技能落地"FastAPI 异步后端"，跨栈方法论见下列 `references/`（按需读取）：
+
+- 后端深度 playbook（FastAPI / 异步 / 依赖注入 / 踩坑速查）：`references/backend-playbook.md`
+- AI-native 全栈工作流（契约优先 → 前后端并行联调）：`references/fullstack-workflow.md`

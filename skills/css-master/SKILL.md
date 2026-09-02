@@ -55,3 +55,10 @@ metadata:
 - 不涉及 CSS-in-JS 方案
 - 不涉及 CSS 动画（归属 motion-design）
 - 浏览器兼容性需用户自行测试
+
+## 相关参考（Playbook）
+
+本子技能落地"Tailwind / CSS 高级布局"，相关方法论见下列 `references/`（按需读取）：
+
+- 前端深度 playbook（CSS / Grid / 响应式 / 踩坑）：`references/frontend-playbook.md`
+- Tailwind CSS 审计 playbook（purge / 配置漂移 / 冲突类名 / v3→v4 迁移）：`references/tailwind-audit-playbook.md`

@@ -79,3 +79,9 @@ tags:
 - NoSQL（MongoDB/Redis）仅涉及选型建议，不深入设计
 - 不涉及数据仓库（OLAP）设计
 - 不替代 DBA 做生产环境调优
+
+## 相关参考（Playbook）
+
+本子技能落地"数据库 Schema 与索引设计"，后端方法论见下列 `references/`（按需读取）：
+
+- 后端深度 playbook（数据建模 / 索引 / 慢查询 / 迁移锁表）：`references/backend-playbook.md`

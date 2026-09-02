@@ -75,3 +75,10 @@ tags:
 - 不涉及 gRPC/WebSocket 的详细实现
 - 不替代 API 网关/Kong 等基础设施配置
 - 接口安全（OAuth2/JWT）建议配合 security-guardian 使用
+
+## 相关参考（Playbook）
+
+本子技能落地"接口契约怎么设计"，跨栈方法论见下列 `references/`（按需读取）：
+
+- 后端深度 playbook（API + 架构 + FastAPI 踩坑速查）：`references/backend-playbook.md`
+- AI-native 全栈工作流（契约优先 → 前后端并行 → 类型安全）：`references/fullstack-workflow.md`（类型生成见 `scripts/gen_types_from_openapi.py`）
