@@ -59,4 +59,4 @@ metadata:
 
 本子技能落地"Web 性能优化"，前端方法论见下列 `references/`（按需读取）：
 
-- 前端深度 playbook（Core Web Vitals / bundle / 缓存 / 水合踩坑）：`references/frontend-playbook.md`
+- 前端深度 playbook（Core Web Vitals / bundle / 缓存 / 水合踩坑）：[references/frontend-playbook.md](../../references/frontend-playbook.md)

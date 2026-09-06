@@ -60,5 +60,5 @@ metadata:
 
 本子技能落地"Tailwind / CSS 高级布局"，相关方法论见下列 `references/`（按需读取）：
 
-- 前端深度 playbook（CSS / Grid / 响应式 / 踩坑）：`references/frontend-playbook.md`
-- Tailwind CSS 审计 playbook（purge / 配置漂移 / 冲突类名 / v3→v4 迁移）：`references/tailwind-audit-playbook.md`
+- 前端深度 playbook（CSS / Grid / 响应式 / 踩坑）：[references/frontend-playbook.md](../../references/frontend-playbook.md)
+- Tailwind CSS 审计 playbook（purge / 配置漂移 / 冲突类名 / v3→v4 迁移）：[references/tailwind-audit-playbook.md](../../references/tailwind-audit-playbook.md)

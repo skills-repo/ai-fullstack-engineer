@@ -28,7 +28,7 @@ metadata:
 
 ## 能力边界
 
-- 覆盖 Tailwind 的**诊断与体检**（决策树与清单见 `references/tailwind-audit-playbook.md`）
+- 覆盖 Tailwind 的**诊断与体检**（决策树与清单见 [references/tailwind-audit-playbook.md](../../references/tailwind-audit-playbook.md)）
 - **不替代** `css-master`（教你怎么写 Grid/Flexbox 布局）、`web-performance`（CWV/打包体积通用优化）——它们是基础层
 - 审计产出是**报告与整改建议**，不在未经确认时直接大改生产样式
 - 不涉及原生 CSS / CSS-in-JS 方案的审计（超出 Tailwind 范畴）
@@ -45,7 +45,7 @@ metadata:
 ## 工作流
 
 1. 先判断审计目标类型：**体积（purge）/ 迁移（v3→v4）/ 配置漂移 / 类名冲突 / @apply 与动态类**
-2. 按 `references/tailwind-audit-playbook.md` 的决策树定位问题类别
+2. 按 [references/tailwind-audit-playbook.md](../../references/tailwind-audit-playbook.md) 的决策树定位问题类别
 3. 用对应命令/脚本采集事实（构建产物体积、lint 结果、配置比对），**先核对 Tailwind 版本再跑命令**
 4. 汇总成「问题 → 根因 → 整改建议」清单，重大改动先给报告、不擅自拍板
 

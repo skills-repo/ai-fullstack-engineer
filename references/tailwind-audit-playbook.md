@@ -180,7 +180,7 @@ const map = { red: 'bg-red-500', blue: 'bg-blue-500' }
 
 ## 相关参考
 
-- 前端通用范式（含 Tailwind 集成）：`references/frontend-playbook.md`
-- 布局写法（非审计视角）：`skills/css-master`
-- 通用性能指标：`skills/web-performance`
-- 本 playbook 归属子技能：`skills/tailwind-audit`
+- 前端通用范式（含 Tailwind 集成）：[references/frontend-playbook.md](frontend-playbook.md)
+- 布局写法（非审计视角）：[skills/css-master](../skills/css-master/SKILL.md)
+- 通用性能指标：[skills/web-performance](../skills/web-performance/SKILL.md)
+- 本 playbook 归属子技能：[skills/tailwind-audit](../skills/tailwind-audit/SKILL.md)

@@ -28,7 +28,7 @@ metadata:
 
 ## 能力边界
 
-- 覆盖 App Router 的**范式决策与常见坑**（决策树见 `references/nextjs-app-router-playbook.md`）
+- 覆盖 App Router 的**范式决策与常见坑**（决策树见 [references/nextjs-app-router-playbook.md](../../references/nextjs-app-router-playbook.md)）
 - 不替代 `component-builder`（通用 Web 组件）、`css-master`（样式）、`web-performance`（性能指标）——它们仍是基础层能力
 - 不涉及后端服务实现（走 `fastapi-python` / `backend-patterns`）、不涉及部署（走 `devops-engineer`）
 
@@ -43,7 +43,7 @@ metadata:
 ## 工作流
 
 1. 先判断任务落在哪一类：**渲染单元（layout/page）、交互单元（client）、数据接口（route handler / server action）、横切（middleware / metadata）**
-2. 按 `references/nextjs-app-router-playbook.md` 的决策树选对范式
+2. 按 [references/nextjs-app-router-playbook.md](../../references/nextjs-app-router-playbook.md) 的决策树选对范式
 3. 落地时优先用原生 App Router API，避免引入与范式冲突的第三方抽象
 4. 对照 playbook 的「上线前检查清单」逐项核验（'use client' 边界、缓存语义、异步 `params`）
 

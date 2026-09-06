@@ -10,27 +10,27 @@
 
 | 维度 | 子技能 | 路径 |
 |------|--------|------|
-| 后端-设计 | api-design | `skills/api-design/SKILL.md` |
-| 后端-架构 | backend-patterns | `skills/backend-patterns/SKILL.md` |
-| 后端-数据 | database-design | `skills/database-design/SKILL.md` |
-| 后端-开发 | fastapi-python | `skills/fastapi-python/SKILL.md` |
-| 前端-组件 | component-builder | `skills/component-builder/SKILL.md` |
-| 前端-样式 | css-master | `skills/css-master/SKILL.md` |
-| 前端-性能 | web-performance | `skills/web-performance/SKILL.md` |
-| 前端-调试 | browser-devtools | `skills/browser-devtools/SKILL.md` |
+| 后端-设计 | api-design | [skills/api-design/SKILL.md](skills/api-design/SKILL.md) |
+| 后端-架构 | backend-patterns | [skills/backend-patterns/SKILL.md](skills/backend-patterns/SKILL.md) |
+| 后端-数据 | database-design | [skills/database-design/SKILL.md](skills/database-design/SKILL.md) |
+| 后端-开发 | fastapi-python | [skills/fastapi-python/SKILL.md](skills/fastapi-python/SKILL.md) |
+| 前端-组件 | component-builder | [skills/component-builder/SKILL.md](skills/component-builder/SKILL.md) |
+| 前端-样式 | css-master | [skills/css-master/SKILL.md](skills/css-master/SKILL.md) |
+| 前端-性能 | web-performance | [skills/web-performance/SKILL.md](skills/web-performance/SKILL.md) |
+| 前端-调试 | browser-devtools | [skills/browser-devtools/SKILL.md](skills/browser-devtools/SKILL.md) |
 
 ## 深层 playbook（渐进式加载）
 
 | 任务 | 读取 |
 |------|------|
-| AI-native 全栈工作流 | `references/fullstack-workflow.md` |
-| 后端深度 playbook | `references/backend-playbook.md` |
-| 前端深度 playbook | `references/frontend-playbook.md` |
+| AI-native 全栈工作流 | [references/fullstack-workflow.md](references/fullstack-workflow.md) |
+| 后端深度 playbook | [references/backend-playbook.md](references/backend-playbook.md) |
+| 前端深度 playbook | [references/frontend-playbook.md](references/frontend-playbook.md) |
 
 ## 内置脚本
 
-- `scripts/scaffold_fullstack.py` — 生成全栈骨架
-- `scripts/gen_types_from_openapi.py` — OpenAPI → TS 类型
+- [scripts/scaffold_fullstack.py](scripts/scaffold_fullstack.py) — 生成全栈骨架
+- [scripts/gen_types_from_openapi.py](scripts/gen_types_from_openapi.py) — OpenAPI → TS 类型
 
 ## 适用场景
 

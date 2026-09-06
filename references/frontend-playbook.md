@@ -29,7 +29,7 @@ npx -y modern-web-guidance search "accessible modal component"
 [ ] 跨浏览器兼容最后验证（见第 4 节 devtools）
 ```
 
-> 具体调用：`skills/component-builder`。
+> 具体调用：[skills/component-builder](../skills/component-builder/SKILL.md)。
 
 ## 2. Tailwind / CSS 高级布局（css-master）
 
@@ -48,7 +48,7 @@ npx -y modern-web-guidance search "accessible modal component"
 - **响应式断点**：移动优先，逐级增强；用 `aspect-ratio` 固定媒体比例避免 CLS。
 - **容器查询**：组件内 `@container` 让卡片在侧栏窄、主区宽时呈现不同布局。
 
-> 具体调用：`skills/css-master`。
+> 具体调用：[skills/css-master](../skills/css-master/SKILL.md)。
 
 ## 3. Web 性能优化（web-performance）
 
@@ -66,7 +66,7 @@ npx -y modern-web-guidance search "accessible modal component"
 Lighthouse 取基线(LCP/INP/CLS/TBT) → 分析 bundle + 网络瀑布 → 按优先级优化 → 复测验证改善
 ```
 
-> 具体调用：`skills/web-performance`。
+> 具体调用：[skills/web-performance](../skills/web-performance/SKILL.md)。
 
 ## 4. Chrome DevTools 自动化（browser-devtools）
 
@@ -82,7 +82,7 @@ npx -y chrome-devtools-axi lighthouse http://localhost:5173   # 性能审计
 
 适用：网页自动化测试、内容提取截图、性能审计、浏览器行为调试。**不替代** Playwright/Cypress 的完整 E2E 框架（复杂流程用专业工具，配合 `software-tester`）。
 
-> 具体调用：`skills/browser-devtools`。
+> 具体调用：[skills/browser-devtools](../skills/browser-devtools/SKILL.md)。
 
 ### 4.1 选型：DOM/CDP 驱动 vs 视觉驱动
 
@@ -90,13 +90,13 @@ npx -y chrome-devtools-axi lighthouse http://localhost:5173   # 性能审计
 
 | 判断条件 | 选择 |
 |---------|------|
-| DOM 结构稳定、要可复现脚本、要 Lighthouse/网络分析 | DOM/CDP 驱动 → `skills/browser-devtools` |
+| DOM 结构稳定、要可复现脚本、要 Lighthouse/网络分析 | DOM/CDP 驱动 → [skills/browser-devtools](../skills/browser-devtools/SKILL.md) |
 | 要写进 CI 的正式 E2E 断言 | Playwright → `software-tester` 的 `e2e-testing` |
-| 选择器易变 / 只有截图作依据 / Canvas 与富交互 / 想用自然语言描述意图 | 视觉驱动 → `skills/ai-browser-automation` |
+| 选择器易变 / 只有截图作依据 / Canvas 与富交互 / 想用自然语言描述意图 | 视觉驱动 → [skills/ai-browser-automation](../skills/ai-browser-automation/SKILL.md) |
 
 代价对照：DOM/CDP 快且免费但依赖选择器稳定；视觉驱动抗结构变化但需多模态模型 API key、单步约 1 分钟且有调用成本。**先试 DOM/CDP，定位不住再上视觉驱动**，不要反过来。
 
-> 具体调用：`skills/ai-browser-automation`。
+> 具体调用：[skills/ai-browser-automation](../skills/ai-browser-automation/SKILL.md)。
 
 ## 5. 高频踩坑速查
 
@@ -112,7 +112,7 @@ npx -y chrome-devtools-axi lighthouse http://localhost:5173   # 性能审计
 | 容器查询写了却不生效 | 父级没声明 `container-type: inline-size` | 先在父容器建立 `@container` 上下文，再写 `@container` 查询 |
 | Chrome 正常、Safari 布局崩 | 只验证了单浏览器，`:has()` / anchor positioning 支持度不一致 | `@supports` 兜底 + devtools 跨设备模拟后再上线（见第 4 节） |
 | bundle 分析显示大库仍在主包里 | 同一模块既被 `import()` 又被静态引用；或 barrel file 把整库拉进来 | 去掉静态引用、按深路径导入、核对 `sideEffects` 配置 |
-| 生产环境 className 丢失、样式偶尔不生效 | Tailwind 动态拼接类名未被 `content` 扫描到 | 见 `references/tailwind-audit-playbook.md` 第 8 节（本表不重复） |
+| 生产环境 className 丢失、样式偶尔不生效 | Tailwind 动态拼接类名未被 `content` 扫描到 | 见 [references/tailwind-audit-playbook.md](tailwind-audit-playbook.md) 第 8 节（本表不重复） |
 
 ## 前端决策速查
 
@@ -123,6 +123,6 @@ npx -y chrome-devtools-axi lighthouse http://localhost:5173   # 性能审计
 
 ## 与全栈流程衔接
 
-- 前端类型来自后端契约：`scripts/gen_types_from_openapi.py`（见 `references/fullstack-workflow.md`）。
+- 前端类型来自后端契约：[scripts/gen_types_from_openapi.py](../scripts/gen_types_from_openapi.py)（见 [references/fullstack-workflow.md](fullstack-workflow.md)）。
 - 组件调用后端：用生成的类型安全的 `api/client.ts`，编译期拦截字段错位。
 - 性能门禁接 `assets/ci-fullstack.yml`。

@@ -82,7 +82,7 @@ python3 scripts/gen_types_from_openapi.py --spec openapi.json --out src/api/type
    → 类型安全联调 → AI 辅助调试(DevTools) → 性能/质量门禁 → 交付(compose+CI)
 ```
 
-详见 `references/fullstack-workflow.md`。
+详见 [references/fullstack-workflow.md](references/fullstack-workflow.md)。
 
 ## 目录结构
 

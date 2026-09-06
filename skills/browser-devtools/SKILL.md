@@ -59,4 +59,4 @@ metadata:
 
 本子技能落地"浏览器自动化调试"，前端方法论见下列 `references/`（按需读取）：
 
-- 前端深度 playbook（组件 / CSS / 调试 / 性能 / 水合踩坑）：`references/frontend-playbook.md`
+- 前端深度 playbook（组件 / CSS / 调试 / 性能 / 水合踩坑）：[references/frontend-playbook.md](../../references/frontend-playbook.md)

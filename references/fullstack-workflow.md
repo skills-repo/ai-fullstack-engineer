@@ -7,8 +7,8 @@
 传统全栈开发的最大摩擦在**联调**：前端等后端接口、后端改字段前端崩、类型对不上只能运行时才发现。AI-native 工作流用三件事消掉摩擦：
 
 1. **契约优先（Contract-First）** —— 先定 OpenAPI，前后端按同一份契约并行。
-2. **类型安全（Type-Safe）** —— 用 `scripts/gen_types_from_openapi.py` 从契约生成 TS 类型，编译期拦截字段错位。
-3. **脚手架即基线（Scaffold-as-Baseline）** —— 用 `scripts/scaffold_fullstack.py` 一次性产出可运行骨架，把"搭环境"从 hours 降到 minutes。
+2. **类型安全（Type-Safe）** —— 用 [scripts/gen_types_from_openapi.py](../scripts/gen_types_from_openapi.py) 从契约生成 TS 类型，编译期拦截字段错位。
+3. **脚手架即基线（Scaffold-as-Baseline）** —— 用 [scripts/scaffold_fullstack.py](../scripts/scaffold_fullstack.py) 一次性产出可运行骨架，把"搭环境"从 hours 降到 minutes。
 
 ## 端到端流程
 
@@ -68,8 +68,8 @@ python3 scripts/scaffold_fullstack.py --name my-saas --be fastapi --fe react
 
 ## 阶段 4：并行推进（前后端解耦）
 
-- **后端**：按 `references/backend-playbook.md` 的 api-design / backend-patterns / database-design / fastapi-python 落地。
-- **前端**：先跑 `gen_types_from_openapi.py` 把契约变 TS 类型，再按 `references/frontend-playbook.md` 的 component-builder / css-master / web-performance 开发。
+- **后端**：按 [references/backend-playbook.md](backend-playbook.md) 的 api-design / backend-patterns / database-design / fastapi-python 落地。
+- **前端**：先跑 `gen_types_from_openapi.py` 把契约变 TS 类型，再按 [references/frontend-playbook.md](frontend-playbook.md) 的 component-builder / css-master / web-performance 开发。
 
 两端可以**同时开工**，唯一硬依赖是那份 OpenAPI 契约。
 
@@ -121,4 +121,4 @@ npx -y chrome-devtools-axi open http://localhost:5173
 
 - **技术栈**：Python 后端 → FastAPI（async + Pydantic）；Node 后端 → Express + 分层。前端 → React/Vue + Tailwind。
 - **数据库**：关系型首选 PostgreSQL；ORM 选型见 backend-playbook → database-design。
-- **何时引入子技能**：具体技能问题（如"这个 Grid 怎么写"）直接调 `skills/css-master`；方法论/跨端问题回本 playbook。
+- **何时引入子技能**：具体技能问题（如"这个 Grid 怎么写"）直接调 [skills/css-master](../skills/css-master/SKILL.md)；方法论/跨端问题回本 playbook。

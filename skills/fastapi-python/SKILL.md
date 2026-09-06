@@ -86,5 +86,5 @@ app/
 
 本子技能落地"FastAPI 异步后端"，跨栈方法论见下列 `references/`（按需读取）：
 
-- 后端深度 playbook（FastAPI / 异步 / 依赖注入 / 踩坑速查）：`references/backend-playbook.md`
-- AI-native 全栈工作流（契约优先 → 前后端并行联调）：`references/fullstack-workflow.md`
+- 后端深度 playbook（FastAPI / 异步 / 依赖注入 / 踩坑速查）：[references/backend-playbook.md](../../references/backend-playbook.md)
+- AI-native 全栈工作流（契约优先 → 前后端并行联调）：[references/fullstack-workflow.md](../../references/fullstack-workflow.md)

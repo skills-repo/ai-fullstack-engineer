@@ -60,4 +60,4 @@ metadata:
 
 本子技能落地"现代 Web 组件与模式"，前端方法论见下列 `references/`（按需读取）：
 
-- 前端深度 playbook（组件 / 响应式 / 性能 / 踩坑速查）：`references/frontend-playbook.md`
+- 前端深度 playbook（组件 / 响应式 / 性能 / 踩坑速查）：[references/frontend-playbook.md](../../references/frontend-playbook.md)

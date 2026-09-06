@@ -43,24 +43,24 @@ metadata:
 
 | 任务 | 读取 / 调用 | 关键词（grep 线索） |
 |------|------------|---------------------|
-| AI-native 全栈工作流（脚手架→契约→并行→联调→部署） | `references/fullstack-workflow.md` | 全栈, workflow, 脚手架, 联调, 类型安全, 并行, AI 工作流 |
-| 后端深度 playbook（API + 架构模式 + 数据 + FastAPI + 踩坑速查） | `references/backend-playbook.md` | 后端, api, 架构, orm, 索引, fastapi, 异步, repository, 踩坑, n+1, 慢查询, 幂等, 迁移锁表 |
-| 前端深度 playbook（组件 + CSS + 调试 + 性能 + 踩坑速查） | `references/frontend-playbook.md` | 前端, 组件, css, grid, 性能, cwv, devtools, 响应式, 踩坑, lcp, cls, 水合, bundle |
-| 多智能体编排 playbook（决策树 + 框架选型 + 通信 + 踩坑清单） | `references/multi-agent-orchestration-playbook.md` | 多智能体, 编排, 决策树, crewai, langgraph, autogen, swarm, 通信, 聚合, 踩坑 |
-| Next.js App Router 深度 playbook（渲染单元/数据接口/缓存/路由决策树 + 踩坑清单） | `references/nextjs-app-router-playbook.md` | next.js, app router, 服务端组件, 客户端组件, 路由处理器, server action, 缓存, rsc, 渲染单元, params, 静态渲染 |
-| Tailwind CSS 审计深度 playbook（体积/purge/v3→v4 迁移/配置漂移/冲突/@apply 决策树 + 踩坑清单） | `references/tailwind-audit-playbook.md` | tailwind, 审计, purge, 未用类, v3迁移, 配置漂移, 冲突类名, @apply, 体积, 动态类名, 暗色 |
-| API 与接口设计（细粒度调用） | `skills/api-design/SKILL.md` | rest, graphql, 版本, 错误码, openapi, 契约 |
-| 后端架构模式（细粒度调用） | `skills/backend-patterns/SKILL.md` | 分层, express, 中间件, 安全, 限流, circuit breaker |
-| 数据库设计（细粒度调用） | `skills/database-design/SKILL.md` | schema, 索引, 范式, 迁移, 主键, 软删除 |
-| FastAPI Python 开发（细粒度调用） | `skills/fastapi-python/SKILL.md` | fastapi, pydantic, async, 依赖注入, 中间件 |
-| 现代 Web 组件开发（细粒度调用） | `skills/component-builder/SKILL.md` | 组件, react, vue, modal, 表单, view transitions |
-| Tailwind/CSS 高级布局（细粒度调用） | `skills/css-master/SKILL.md` | tailwind, grid, flexbox, 圣杯布局, 容器查询, 响应式 |
-| Web 性能优化（细粒度调用） | `skills/web-performance/SKILL.md` | lcp, inp, cls, bundle, 缓存, lighthouse, 代码分割 |
-| Chrome DevTools 自动化（细粒度调用） | `skills/browser-devtools/SKILL.md` | devtools, 截图, 快照, 审计, 自动化, lighthouse |
-| 视觉驱动浏览器自动化（细粒度调用） | `skills/ai-browser-automation/SKILL.md` | midscene, 视觉驱动, 自然语言, 抓取, 爬取, act, assert, cdp, bridge, 无选择器, 登录态 |
-| Next.js App Router 范式（细粒度调用） | `skills/nextjs-app-router/SKILL.md` | next.js, app router, 服务端组件, 客户端组件, 路由处理器, server action, 缓存, rsc |
-| Tailwind CSS 审计（细粒度调用） | `skills/tailwind-audit/SKILL.md` | tailwind, 审计, purge, 未用类, v3迁移, 配置漂移, 冲突类名, @apply |
-| 多智能体编排（细粒度调用） | `skills/multi-agent-orchestration/SKILL.md` | 多智能体, multi-agent, 编排, orchestrator, 子agent, 协作, crewai, langgraph, 共识, 并行 |
+| AI-native 全栈工作流（脚手架→契约→并行→联调→部署） | [references/fullstack-workflow.md](references/fullstack-workflow.md) | 全栈, workflow, 脚手架, 联调, 类型安全, 并行, AI 工作流 |
+| 后端深度 playbook（API + 架构模式 + 数据 + FastAPI + 踩坑速查） | [references/backend-playbook.md](references/backend-playbook.md) | 后端, api, 架构, orm, 索引, fastapi, 异步, repository, 踩坑, n+1, 慢查询, 幂等, 迁移锁表 |
+| 前端深度 playbook（组件 + CSS + 调试 + 性能 + 踩坑速查） | [references/frontend-playbook.md](references/frontend-playbook.md) | 前端, 组件, css, grid, 性能, cwv, devtools, 响应式, 踩坑, lcp, cls, 水合, bundle |
+| 多智能体编排 playbook（决策树 + 框架选型 + 通信 + 踩坑清单） | [references/multi-agent-orchestration-playbook.md](references/multi-agent-orchestration-playbook.md) | 多智能体, 编排, 决策树, crewai, langgraph, autogen, swarm, 通信, 聚合, 踩坑 |
+| Next.js App Router 深度 playbook（渲染单元/数据接口/缓存/路由决策树 + 踩坑清单） | [references/nextjs-app-router-playbook.md](references/nextjs-app-router-playbook.md) | next.js, app router, 服务端组件, 客户端组件, 路由处理器, server action, 缓存, rsc, 渲染单元, params, 静态渲染 |
+| Tailwind CSS 审计深度 playbook（体积/purge/v3→v4 迁移/配置漂移/冲突/@apply 决策树 + 踩坑清单） | [references/tailwind-audit-playbook.md](references/tailwind-audit-playbook.md) | tailwind, 审计, purge, 未用类, v3迁移, 配置漂移, 冲突类名, @apply, 体积, 动态类名, 暗色 |
+| API 与接口设计（细粒度调用） | [skills/api-design/SKILL.md](skills/api-design/SKILL.md) | rest, graphql, 版本, 错误码, openapi, 契约 |
+| 后端架构模式（细粒度调用） | [skills/backend-patterns/SKILL.md](skills/backend-patterns/SKILL.md) | 分层, express, 中间件, 安全, 限流, circuit breaker |
+| 数据库设计（细粒度调用） | [skills/database-design/SKILL.md](skills/database-design/SKILL.md) | schema, 索引, 范式, 迁移, 主键, 软删除 |
+| FastAPI Python 开发（细粒度调用） | [skills/fastapi-python/SKILL.md](skills/fastapi-python/SKILL.md) | fastapi, pydantic, async, 依赖注入, 中间件 |
+| 现代 Web 组件开发（细粒度调用） | [skills/component-builder/SKILL.md](skills/component-builder/SKILL.md) | 组件, react, vue, modal, 表单, view transitions |
+| Tailwind/CSS 高级布局（细粒度调用） | [skills/css-master/SKILL.md](skills/css-master/SKILL.md) | tailwind, grid, flexbox, 圣杯布局, 容器查询, 响应式 |
+| Web 性能优化（细粒度调用） | [skills/web-performance/SKILL.md](skills/web-performance/SKILL.md) | lcp, inp, cls, bundle, 缓存, lighthouse, 代码分割 |
+| Chrome DevTools 自动化（细粒度调用） | [skills/browser-devtools/SKILL.md](skills/browser-devtools/SKILL.md) | devtools, 截图, 快照, 审计, 自动化, lighthouse |
+| 视觉驱动浏览器自动化（细粒度调用） | [skills/ai-browser-automation/SKILL.md](skills/ai-browser-automation/SKILL.md) | midscene, 视觉驱动, 自然语言, 抓取, 爬取, act, assert, cdp, bridge, 无选择器, 登录态 |
+| Next.js App Router 范式（细粒度调用） | [skills/nextjs-app-router/SKILL.md](skills/nextjs-app-router/SKILL.md) | next.js, app router, 服务端组件, 客户端组件, 路由处理器, server action, 缓存, rsc |
+| Tailwind CSS 审计（细粒度调用） | [skills/tailwind-audit/SKILL.md](skills/tailwind-audit/SKILL.md) | tailwind, 审计, purge, 未用类, v3迁移, 配置漂移, 冲突类名, @apply |
+| 多智能体编排（细粒度调用） | [skills/multi-agent-orchestration/SKILL.md](skills/multi-agent-orchestration/SKILL.md) | 多智能体, multi-agent, 编排, orchestrator, 子agent, 协作, crewai, langgraph, 共识, 并行 |
 
 > 路由规则：先判断任务属于「后端 / 前端 / 全栈流程」哪一类；先做方法论决策就读 `references/`，要落地某个具体技能就直接调 `skills/` 对应子技能。
 

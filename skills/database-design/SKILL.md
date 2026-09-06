@@ -84,4 +84,4 @@ tags:
 
 本子技能落地"数据库 Schema 与索引设计"，后端方法论见下列 `references/`（按需读取）：
 
-- 后端深度 playbook（数据建模 / 索引 / 慢查询 / 迁移锁表）：`references/backend-playbook.md`
+- 后端深度 playbook（数据建模 / 索引 / 慢查询 / 迁移锁表）：[references/backend-playbook.md](../../references/backend-playbook.md)

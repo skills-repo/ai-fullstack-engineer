@@ -172,4 +172,4 @@ psql -c "SELECT pid, state, wait_event_type, now()-xact_start AS age, query
 - 慢查询 → 第 3 节索引 + EXPLAIN。
 - 架构坏味 → 第 2 节分层与模式。
 
-> 具体技能调用：设计接口 → `skills/api-design`；架构重构 → `skills/backend-patterns`；Schema/索引 → `skills/database-design`；FastAPI 落地 → `skills/fastapi-python`。
+> 具体技能调用：设计接口 → [skills/api-design](../skills/api-design/SKILL.md)；架构重构 → [skills/backend-patterns](../skills/backend-patterns/SKILL.md)；Schema/索引 → [skills/database-design](../skills/database-design/SKILL.md)；FastAPI 落地 → [skills/fastapi-python](../skills/fastapi-python/SKILL.md)。

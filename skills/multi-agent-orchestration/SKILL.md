@@ -18,7 +18,7 @@ metadata:
 
 > 把"一个全能 Agent 硬扛复杂任务"拆成"多个专职 Agent 协作"：每个 Agent 有清晰的角色 / 目标 / 工具，由编排器（Orchestrator）统筹、结果聚合器汇总。覆盖协作式推理、并行分析、领域专长拆分等场景。
 
-衍生自社区技能 `qodex-ai/ai-agent-skills`（skills.sh 2K 安装量），适配全栈工程师在应用里落地多 Agent 流水线。决策树、框架选型矩阵与踩坑清单见 `references/multi-agent-orchestration-playbook.md`。
+衍生自社区技能 `qodex-ai/ai-agent-skills`（skills.sh 2K 安装量），适配全栈工程师在应用里落地多 Agent 流水线。决策树、框架选型矩阵与踩坑清单见 [references/multi-agent-orchestration-playbook.md](../../references/multi-agent-orchestration-playbook.md)。
 
 ## 能力
 
@@ -36,7 +36,7 @@ metadata:
 - 需要**协作式推理**（多个视角辩论、互相挑错、达成共识）
 - 需要**韧性**：单个 Agent 失败不应拖垮整条链路
 
-> 简单线性任务、单一领域、无需并行 → 单 Agent 即可，不要为"酷"而编排。决策树见 `references/multi-agent-orchestration-playbook.md`。
+> 简单线性任务、单一领域、无需并行 → 单 Agent 即可，不要为"酷"而编排。决策树见 [references/multi-agent-orchestration-playbook.md](../../references/multi-agent-orchestration-playbook.md)。
 
 ## 编排模式速览
 
@@ -55,7 +55,7 @@ metadata:
 - **LangGraph** — 需要状态管理 / 有环工作流
 - **Swarm** — 简单 handoff、对话式路由
 
-完整代码示例与选型矩阵见 `references/multi-agent-orchestration-playbook.md`。
+完整代码示例与选型矩阵见 [references/multi-agent-orchestration-playbook.md](../../references/multi-agent-orchestration-playbook.md)。
 
 ## 使用方式
 

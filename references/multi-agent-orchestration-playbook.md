@@ -1,6 +1,6 @@
 # 多智能体编排 Playbook
 
-> 配合 `skills/multi-agent-orchestration` 使用。本篇是「决策方法论」层：何时上多 Agent、怎么选模式 / 框架、通信怎么搭、踩坑怎么救。子技能里放不下的判断与坑都在这里。
+> 配合 [skills/multi-agent-orchestration](../skills/multi-agent-orchestration/SKILL.md) 使用。本篇是「决策方法论」层：何时上多 Agent、怎么选模式 / 框架、通信怎么搭、踩坑怎么救。子技能里放不下的判断与坑都在这里。
 
 ## 1. 决策树：多 Agent 还是单 Agent？
 

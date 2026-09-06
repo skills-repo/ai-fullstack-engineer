@@ -23,7 +23,7 @@ metadata:
 
 | 场景 | 用哪个 |
 |------|--------|
-| 页面结构稳定、要写可复现调试脚本、跑 Lighthouse | `skills/browser-devtools`（CDP + 无障碍快照 ref） |
+| 页面结构稳定、要写可复现调试脚本、跑 Lighthouse | [skills/browser-devtools](../../skills/browser-devtools/SKILL.md)（CDP + 无障碍快照 ref） |
 | 要写进 CI 的正式 E2E 断言用例 | `software-tester` 的 `e2e-testing`（Playwright 选择器） |
 | **选择器不稳定 / 只有截图 / 想用自然语言描述意图 / Canvas 与富交互页面** | **本技能（视觉驱动）** |
 
@@ -178,4 +178,4 @@ npx -y @midscene/web@1 act --deep-locate --deep-think \
 
 本子技能落地"视觉驱动浏览器自动化"，前端方法论见下列 `references/`（按需读取）：
 
-- 前端深度 playbook（组件 / CSS / 调试 / 性能 / 水合踩坑，§4 为 DevTools 自动化对照）：`references/frontend-playbook.md`
+- 前端深度 playbook（组件 / CSS / 调试 / 性能 / 水合踩坑，§4 为 DevTools 自动化对照）：[references/frontend-playbook.md](../../references/frontend-playbook.md)

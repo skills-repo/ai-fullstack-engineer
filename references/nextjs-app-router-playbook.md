@@ -142,7 +142,7 @@ middleware.ts           # 边缘中间件（项目根或 src/ 根）
 
 ## 相关参考
 
-- 前端通用范式与组件/样式/性能落地：`references/frontend-playbook.md`
-- 契约优先工作流（前后端类型安全）：`references/fullstack-workflow.md`
-- 接口契约设计：`skills/api-design`
-- 本 playbook 归属子技能：`skills/nextjs-app-router`
+- 前端通用范式与组件/样式/性能落地：[references/frontend-playbook.md](frontend-playbook.md)
+- 契约优先工作流（前后端类型安全）：[references/fullstack-workflow.md](fullstack-workflow.md)
+- 接口契约设计：[skills/api-design](../skills/api-design/SKILL.md)
+- 本 playbook 归属子技能：[skills/nextjs-app-router](../skills/nextjs-app-router/SKILL.md)

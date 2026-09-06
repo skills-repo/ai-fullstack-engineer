@@ -80,5 +80,5 @@ tags:
 
 本子技能落地"后端架构模式"，跨栈方法论见下列 `references/`（按需读取）：
 
-- 后端深度 playbook（分层 / 中间件 / 安全 / 限流 / 幂等 / 迁移锁表）：`references/backend-playbook.md`
-- AI-native 全栈工作流（并联交付与联调）：`references/fullstack-workflow.md`
+- 后端深度 playbook（分层 / 中间件 / 安全 / 限流 / 幂等 / 迁移锁表）：[references/backend-playbook.md](../../references/backend-playbook.md)
+- AI-native 全栈工作流（并联交付与联调）：[references/fullstack-workflow.md](../../references/fullstack-workflow.md)
