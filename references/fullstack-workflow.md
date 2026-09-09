@@ -47,7 +47,7 @@
 - 后端实现被契约"钉死"，减少随意改字段。
 - 可自动生成文档、Mock Server、客户端。
 
-起点：复制 `assets/openapi-spec-template.yaml`，补全 `paths` 与 `components.schemas`。
+起点：复制 [assets/openapi-spec-template.yaml](../assets/openapi-spec-template.yaml)，补全 `paths` 与 `components.schemas`。
 
 > 契约稳定性原则（详见 backend-playbook → api-design）：名词复数、HTTP 语义准确、状态码精确、分页统一、错误可调试。
 
@@ -100,12 +100,12 @@ npx -y chrome-devtools-axi open http://localhost:5173
 
 - 前端：`web-performance` 跑 Lighthouse，盯 LCP / INP / CLS。
 - 后端：压测关键端点，查 N+1、慢查询、连接池（backend-playbook → backend-patterns / database-design）。
-- 门禁：把 `assets/ci-fullstack.yml` 接进仓库，PR 阶段卡 build / test / lint。
+- 门禁：把 [assets/ci-fullstack.yml](../assets/ci-fullstack.yml) 接进仓库，PR 阶段卡 build / test / lint。
 
 ## 阶段 8：交付
 
-- 本地：`docker-compose up` 一键起前后端 + 数据库（基于 `assets/docker-compose.fullstack.yaml`）。
-- CI：`assets/ci-fullstack.yml` 联合构建前后端、跑测试。
+- 本地：`docker-compose up` 一键起前后端 + 数据库（基于 [assets/docker-compose.fullstack.yaml](../assets/docker-compose.fullstack.yaml)）。
+- CI：[assets/ci-fullstack.yml](../assets/ci-fullstack.yml) 联合构建前后端、跑测试。
 - 文档：`docs-writer` 生成 API 文档与 README。
 
 ## 常见反模式

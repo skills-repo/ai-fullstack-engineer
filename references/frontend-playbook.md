@@ -125,4 +125,4 @@ npx -y chrome-devtools-axi lighthouse http://localhost:5173   # 性能审计
 
 - 前端类型来自后端契约：[scripts/gen_types_from_openapi.py](../scripts/gen_types_from_openapi.py)（见 [references/fullstack-workflow.md](fullstack-workflow.md)）。
 - 组件调用后端：用生成的类型安全的 `api/client.ts`，编译期拦截字段错位。
-- 性能门禁接 `assets/ci-fullstack.yml`。
+- 性能门禁接 [assets/ci-fullstack.yml](../assets/ci-fullstack.yml)。

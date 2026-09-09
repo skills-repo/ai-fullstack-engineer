@@ -82,9 +82,9 @@ python3 scripts/gen_types_from_openapi.py --spec openapi.json --out src/api/type
 
 `assets/` 提供可直接套用的配置与模板：
 
-- `assets/openapi-spec-template.yaml` — 起步版 OpenAPI 3.0 契约模板（契约优先工作流入口）
-- `assets/docker-compose.fullstack.yaml` — 前端 + 后端 + 数据库一体编排模板
-- `assets/ci-fullstack.yml` — GitHub Actions 前后端联合构建/测试 CI 模板
+- [assets/openapi-spec-template.yaml](assets/openapi-spec-template.yaml) — 起步版 OpenAPI 3.0 契约模板（契约优先工作流入口）
+- [assets/docker-compose.fullstack.yaml](assets/docker-compose.fullstack.yaml) — 前端 + 后端 + 数据库一体编排模板
+- [assets/ci-fullstack.yml](assets/ci-fullstack.yml) — GitHub Actions 前后端联合构建/测试 CI 模板
 
 ## 核心原则（始终遵循）
 

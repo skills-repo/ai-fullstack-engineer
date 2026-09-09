@@ -31,7 +31,7 @@
 
 ### 文档驱动
 
-- 用 OpenAPI 3.0 定义契约，自动生成文档与 Mock。起点见 `assets/openapi-spec-template.yaml`。
+- 用 OpenAPI 3.0 定义契约，自动生成文档与 Mock。起点见 [assets/openapi-spec-template.yaml](../assets/openapi-spec-template.yaml)。
 
 ## 2. 架构模式（backend-patterns）
 
