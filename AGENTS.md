@@ -18,6 +18,9 @@
 | 前端-样式 | css-master | [skills/css-master/SKILL.md](skills/css-master/SKILL.md) |
 | 前端-性能 | web-performance | [skills/web-performance/SKILL.md](skills/web-performance/SKILL.md) |
 | 前端-调试 | browser-devtools | [skills/browser-devtools/SKILL.md](skills/browser-devtools/SKILL.md) |
+| 浏览器-路由 | browser-ops | [skills/browser-ops/SKILL.md](skills/browser-ops/SKILL.md) |
+| 浏览器-MCP | browser-mcp | [skills/browser-mcp/SKILL.md](skills/browser-mcp/SKILL.md) |
+| 浏览器-视觉 | ai-browser-automation | [skills/ai-browser-automation/SKILL.md](skills/ai-browser-automation/SKILL.md) |
 
 ## 深层 playbook（渐进式加载）
 
@@ -26,6 +29,7 @@
 | AI-native 全栈工作流 | [references/fullstack-workflow.md](references/fullstack-workflow.md) |
 | 后端深度 playbook | [references/backend-playbook.md](references/backend-playbook.md) |
 | 前端深度 playbook | [references/frontend-playbook.md](references/frontend-playbook.md) |
+| 浏览器操作横切 playbook（登录态/上传/动态表单/验证码兜底/合规） | [references/browser-ops-playbook.md](references/browser-ops-playbook.md) |
 
 ## 内置脚本
 

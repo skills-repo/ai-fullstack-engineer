@@ -32,6 +32,8 @@ metadata:
 - 需要**优化 Web 性能**（Core Web Vitals、bundle、缓存、运行时）
 - 需要**用 Chrome DevTools 自动化**调试、截图、性能审计
 - 需要**用自然语言驱动浏览器**做视觉自动化（选择器不稳定、只有截图、Canvas/富交互页面、抓取网页数据）
+- 需要**为浏览器任务选型**（视觉驱动/选择器/CDP/MCP 四方案路由），或处理登录态、文件上传、人机验证兜底等横切问题
+- 需要**把浏览器能力 MCP 化**接入 Agent / 平台型客户端（@playwright/mcp、chrome-devtools-mcp）
 - 需要**审计 Tailwind CSS**（未用类/purge、v3→v4 迁移、配置漂移、冲突类名）
 - 需要把复杂任务拆成**多个专职 Agent 协作**（多智能体编排 / orchestrator / 子 Agent 流水线）
 - 需要**一键生成全栈脚手架**、从 OpenAPI 生成类型安全的 TS 客户端
@@ -49,6 +51,7 @@ metadata:
 | 多智能体编排 playbook（决策树 + 框架选型 + 通信 + 踩坑清单） | [references/multi-agent-orchestration-playbook.md](references/multi-agent-orchestration-playbook.md) | 多智能体, 编排, 决策树, crewai, langgraph, autogen, swarm, 通信, 聚合, 踩坑 |
 | Next.js App Router 深度 playbook（渲染单元/数据接口/缓存/路由决策树 + 踩坑清单） | [references/nextjs-app-router-playbook.md](references/nextjs-app-router-playbook.md) | next.js, app router, 服务端组件, 客户端组件, 路由处理器, server action, 缓存, rsc, 渲染单元, params, 静态渲染 |
 | Tailwind CSS 审计深度 playbook（体积/purge/v3→v4 迁移/配置漂移/冲突/@apply 决策树 + 踩坑清单） | [references/tailwind-audit-playbook.md](references/tailwind-audit-playbook.md) | tailwind, 审计, purge, 未用类, v3迁移, 配置漂移, 冲突类名, @apply, 体积, 动态类名, 暗色 |
+| 浏览器操作横切 playbook（登录态三模式/文件上传/动态表单内容包/验证码人工兜底/ToS 合规/降级路径） | [references/browser-ops-playbook.md](references/browser-ops-playbook.md) | 登录态, 持久profile, storage-state, cdp接管, 文件上传, file-chooser, 内容包, 动态表单, 滑块, 验证码, 人工兜底, tos, 风控, 降级 |
 | API 与接口设计（细粒度调用） | [skills/api-design/SKILL.md](skills/api-design/SKILL.md) | rest, graphql, 版本, 错误码, openapi, 契约 |
 | 后端架构模式（细粒度调用） | [skills/backend-patterns/SKILL.md](skills/backend-patterns/SKILL.md) | 分层, express, 中间件, 安全, 限流, circuit breaker |
 | 数据库设计（细粒度调用） | [skills/database-design/SKILL.md](skills/database-design/SKILL.md) | schema, 索引, 范式, 迁移, 主键, 软删除 |
@@ -57,6 +60,8 @@ metadata:
 | Tailwind/CSS 高级布局（细粒度调用） | [skills/css-master/SKILL.md](skills/css-master/SKILL.md) | tailwind, grid, flexbox, 圣杯布局, 容器查询, 响应式 |
 | Web 性能优化（细粒度调用） | [skills/web-performance/SKILL.md](skills/web-performance/SKILL.md) | lcp, inp, cls, bundle, 缓存, lighthouse, 代码分割 |
 | Chrome DevTools 自动化（细粒度调用） | [skills/browser-devtools/SKILL.md](skills/browser-devtools/SKILL.md) | devtools, 截图, 快照, 审计, 自动化, lighthouse |
+| 浏览器操作方案路由（细粒度调用：四方案选型 + 三问决策法 + 红线） | [skills/browser-ops/SKILL.md](skills/browser-ops/SKILL.md) | browser-ops, 方案路由, 选型, 视觉驱动, 选择器, cdp, mcp, 三问决策, 何时不用, 验证码兜底 |
+| 浏览器 MCP 接入（细粒度调用：@playwright/mcp + chrome-devtools-mcp） | [skills/browser-mcp/SKILL.md](skills/browser-mcp/SKILL.md) | browser-mcp, playwright mcp, chrome-devtools-mcp, mcp server, 持久profile, storage-state, browser_fill_form, browser_file_upload, http模式 |
 | 视觉驱动浏览器自动化（细粒度调用） | [skills/ai-browser-automation/SKILL.md](skills/ai-browser-automation/SKILL.md) | midscene, 视觉驱动, 自然语言, 抓取, 爬取, act, assert, cdp, bridge, 无选择器, 登录态 |
 | Next.js App Router 范式（细粒度调用） | [skills/nextjs-app-router/SKILL.md](skills/nextjs-app-router/SKILL.md) | next.js, app router, 服务端组件, 客户端组件, 路由处理器, server action, 缓存, rsc |
 | Tailwind CSS 审计（细粒度调用） | [skills/tailwind-audit/SKILL.md](skills/tailwind-audit/SKILL.md) | tailwind, 审计, purge, 未用类, v3迁移, 配置漂移, 冲突类名, @apply |
