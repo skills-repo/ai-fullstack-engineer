@@ -51,7 +51,7 @@ metadata:
 | 多智能体编排 playbook（决策树 + 框架选型 + 通信 + 踩坑清单） | [references/multi-agent-orchestration-playbook.md](references/multi-agent-orchestration-playbook.md) | 多智能体, 编排, 决策树, crewai, langgraph, autogen, swarm, 通信, 聚合, 踩坑 |
 | Next.js App Router 深度 playbook（渲染单元/数据接口/缓存/路由决策树 + 踩坑清单） | [references/nextjs-app-router-playbook.md](references/nextjs-app-router-playbook.md) | next.js, app router, 服务端组件, 客户端组件, 路由处理器, server action, 缓存, rsc, 渲染单元, params, 静态渲染 |
 | Tailwind CSS 审计深度 playbook（体积/purge/v3→v4 迁移/配置漂移/冲突/@apply 决策树 + 踩坑清单） | [references/tailwind-audit-playbook.md](references/tailwind-audit-playbook.md) | tailwind, 审计, purge, 未用类, v3迁移, 配置漂移, 冲突类名, @apply, 体积, 动态类名, 暗色 |
-| 浏览器操作横切 playbook（登录态三模式/文件上传/动态表单内容包/验证码人工兜底/ToS 合规/降级路径） | [references/browser-ops-playbook.md](references/browser-ops-playbook.md) | 登录态, 持久profile, storage-state, cdp接管, 文件上传, file-chooser, 内容包, 动态表单, 滑块, 验证码, 人工兜底, tos, 风控, 降级 |
+| 浏览器操作横切 playbook（登录态三模式/文件上传/动态表单内容包/验证码人工兜底/ToS 合规/降级路径） | [skills/browser-ops/references/browser-ops-playbook.md](skills/browser-ops/references/browser-ops-playbook.md) | 登录态, 持久profile, storage-state, cdp接管, 文件上传, file-chooser, 内容包, 动态表单, 滑块, 验证码, 人工兜底, tos, 风控, 降级 |
 | API 与接口设计（细粒度调用） | [skills/api-design/SKILL.md](skills/api-design/SKILL.md) | rest, graphql, 版本, 错误码, openapi, 契约 |
 | 后端架构模式（细粒度调用） | [skills/backend-patterns/SKILL.md](skills/backend-patterns/SKILL.md) | 分层, express, 中间件, 安全, 限流, circuit breaker |
 | 数据库设计（细粒度调用） | [skills/database-design/SKILL.md](skills/database-design/SKILL.md) | schema, 索引, 范式, 迁移, 主键, 软删除 |

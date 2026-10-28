@@ -1,7 +1,7 @@
 # 浏览器操作横切 playbook（browser-ops playbook）
 
 > 无论选哪个方案（视觉驱动 / 选择器 / CDP / MCP），登录态、文件上传、动态表单、人机验证、合规这五关都要过。
-> 路由决策见 [skills/browser-ops/SKILL.md](../skills/browser-ops/SKILL.md)；本文只写决策方法论与 SOP，不重复子技能命令。
+> 路由决策见 [SKILL.md](../SKILL.md)；本文只写决策方法论与 SOP，不重复子技能命令。
 
 ## 1. 登录态管理三模式对比
 

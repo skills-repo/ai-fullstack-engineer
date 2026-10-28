@@ -44,30 +44,34 @@
 npx skills add skills-repo/ai-fullstack-engineer -g -y
 ```
 
-### 只安装某个细粒度子技能
+### 只安装某个细粒度子技能（子路径 URL 语法）
+
+> ⚠️ **不要用 `repo@子技能` 语法**：skills CLI（vercel-labs/skills）在仓库根存在 `SKILL.md`
+> 时只识别根技能、不枚举 `skills/` 子目录（根技能遮蔽），`@` 后缀会被当作 git 分支名。
+> 子技能安装必须使用完整子路径 URL：
 
 ```bash
 # 后端侧
-npx skills add skills-repo/ai-fullstack-engineer@api-design -g -y
-npx skills add skills-repo/ai-fullstack-engineer@backend-patterns -g -y
-npx skills add skills-repo/ai-fullstack-engineer@database-design -g -y
-npx skills add skills-repo/ai-fullstack-engineer@fastapi-python -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/api-design" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/backend-patterns" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/database-design" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/fastapi-python" -g -y
 
 # 前端侧
-npx skills add skills-repo/ai-fullstack-engineer@component-builder -g -y
-npx skills add skills-repo/ai-fullstack-engineer@css-master -g -y
-npx skills add skills-repo/ai-fullstack-engineer@web-performance -g -y
-npx skills add skills-repo/ai-fullstack-engineer@browser-devtools -g -y
-npx skills add skills-repo/ai-fullstack-engineer@ai-browser-automation -g -y
-npx skills add skills-repo/ai-fullstack-engineer@browser-ops -g -y
-npx skills add skills-repo/ai-fullstack-engineer@browser-mcp -g -y
-npx skills add skills-repo/ai-fullstack-engineer@nextjs-app-router -g -y
-npx skills add skills-repo/ai-fullstack-engineer@tailwind-audit -g -y
-npx skills add skills-repo/ai-fullstack-engineer@multi-agent-orchestration -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/component-builder" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/css-master" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/web-performance" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/browser-devtools" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/ai-browser-automation" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/browser-ops" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/browser-mcp" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/nextjs-app-router" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/tailwind-audit" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/multi-agent-orchestration" -g -y
 ```
 
-> 只装子技能不会带上 `references/`、`scripts/`、`assets/`。需要脚手架脚本与全栈工作流
-> playbook 时，请安装完整技能库。
+> 只装子技能不会带上 `references/`、`scripts/`、`assets/`（子技能自带的内嵌 `references/`
+> 除外，如 `browser-ops`）。需要脚手架脚本与全栈工作流 playbook 时，请安装完整技能库。
 
 ## 快速开始
 
@@ -100,13 +104,12 @@ ai-fullstack-engineer/
 │   ├── frontend-playbook.md
 │   ├── nextjs-app-router-playbook.md
 │   ├── tailwind-audit-playbook.md
-│   ├── multi-agent-orchestration-playbook.md
-│   └── browser-ops-playbook.md
+│   └── multi-agent-orchestration-playbook.md
 ├── skills/                      # 细粒度子技能
 │   ├── api-design/  backend-patterns/  database-design/  fastapi-python/
 │   ├── component-builder/  css-master/  web-performance/  browser-devtools/
 │   ├── nextjs-app-router/  tailwind-audit/  multi-agent-orchestration/
-│   ├── ai-browser-automation/  browser-ops/
+│   ├── ai-browser-automation/  browser-ops/   # browser-ops 内嵌 references/（单装自包含）
 │   └── browser-mcp/
 ├── scripts/                     # 确定性脚本
 │   ├── scaffold_fullstack.py

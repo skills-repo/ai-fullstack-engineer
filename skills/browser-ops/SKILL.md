@@ -44,7 +44,7 @@ metadata:
 | D | 消费方是 MCP Client / 平台型 Agent，需工具化常驻复用 | **MCP** | [browser-mcp](../browser-mcp/SKILL.md) | 一次性任务直接用 A/B/C 更轻 |
 
 **横切关注点**（登录态三模式、文件上传、验证码人工兜底、ToS 合规、动态表单内容包）一律先读
-[references/browser-ops-playbook.md](../../references/browser-ops-playbook.md) —— 方案怎么选完都要过这五关。
+[references/browser-ops-playbook.md](references/browser-ops-playbook.md)（随本技能安装，单装自包含）—— 方案怎么选完都要过这五关。
 
 ## 三问决策法
 

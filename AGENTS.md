@@ -29,7 +29,7 @@
 | AI-native 全栈工作流 | [references/fullstack-workflow.md](references/fullstack-workflow.md) |
 | 后端深度 playbook | [references/backend-playbook.md](references/backend-playbook.md) |
 | 前端深度 playbook | [references/frontend-playbook.md](references/frontend-playbook.md) |
-| 浏览器操作横切 playbook（登录态/上传/动态表单/验证码兜底/合规） | [references/browser-ops-playbook.md](references/browser-ops-playbook.md) |
+| 浏览器操作横切 playbook（登录态/上传/动态表单/验证码兜底/合规） | [skills/browser-ops/references/browser-ops-playbook.md](skills/browser-ops/references/browser-ops-playbook.md) |
 
 ## 内置脚本
 
