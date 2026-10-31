@@ -1,6 +1,6 @@
 ---
 name: browser-mcp
-description: 浏览器能力 MCP 化：@playwright/mcp 与 chrome-devtools-mcp 的安装配置、持久 profile 登录态策略、核心工具清单与双 Server 选型
+description: 浏览器能力 MCP 化：@playwright/mcp 与 chrome-devtools-mcp 安装配置、持久 profile 登录态与工具清单
 source:
   type: derived
   repo: skills-repo/ai-fullstack-engineer
