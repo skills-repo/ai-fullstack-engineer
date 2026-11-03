@@ -28,6 +28,8 @@
 | 组件 | `component-builder` | 现代 Web 组件、React/Vue 适配 | [衍生](https://skills.sh/googlechrome/modern-web-guidance/modern-web-guidance) |
 | 样式 | `css-master` | Tailwind Grid/Flexbox/容器查询 | [衍生](https://skills.sh/josiahsiegel/claude-plugin-marketplace/tailwindcss-advanced-layouts) |
 | 性能 | `web-performance` | Core Web Vitals、bundle、缓存 | [衍生](https://skills.sh/sickn33/antigravity-awesome-skills/web-performance-optimization) |
+| 交付 | `chrome-extension` | 浏览器扩展 MV3、权限、上架 | [衍生](https://github.com/googlechrome/modern-web-guidance) |
+| 验证 | `browser-cli-agent` | CLI 驱动浏览器做真交互验证 | [衍生](https://github.com/vercel-labs/agent-browser) |
 | 调试 | `browser-devtools` | Chrome DevTools 自动化审计 | [衍生](https://skills.sh/kunchenguid/chrome-devtools-axi/chrome-devtools-axi) |
 | 自动化 | `ai-browser-automation` | 视觉驱动浏览器自动化：自然语言操作、抓取、断言，无需选择器 | [衍生](https://skills.sh/web-infra-dev/midscene-skills/browser-automation) |
 | 自动化 | `browser-ops` | 浏览器操作方案路由：视觉驱动/选择器/CDP/MCP 四方案选型、三问决策法、登录态/上传/验证码兜底红线 | [原创](https://github.com/skills-repo/ai-fullstack-engineer) |
@@ -59,6 +61,8 @@ npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/s
 
 # 前端侧
 npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/component-builder" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/chrome-extension" -g -y
+npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/browser-cli-agent" -g -y
 npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/css-master" -g -y
 npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/web-performance" -g -y
 npx skills add "https://github.com/skills-repo/ai-fullstack-engineer/tree/main/skills/browser-devtools" -g -y
