@@ -1,6 +1,6 @@
 ---
 name: nextjs-app-router
-description: Next.js App Router 范式专精：布局/页面/路由处理器、服务端 vs 客户端组件、数据获取与缓存、RSC、流式渲染、并行/拦截路由、中间件与 Metadata API
+description: Next.js App Router 范式专精：布局/路由处理器、服务端组件与客户端组件、数据获取缓存、RSC、流式渲染、中间件、Metadata API
 source:
   type: original
   repo: skills-repo/ai-fullstack-engineer

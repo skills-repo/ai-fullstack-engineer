@@ -1,6 +1,6 @@
 ---
 name: multi-agent-orchestration
-description: 多智能体系统设计与编排：让多个专职 Agent 协作解决复杂问题，覆盖角色定义、任务委派、编排模式（顺序/并行/层次/共识）、消息通信与结果聚合。触发词："多智能体"、"multi-agent"、"智能体编排"、"Agent 团队"、"子 Agent 协作"、"orchestrator"、"多 Agent 流水线"。
+description: 多智能体编排：角色定义、任务委派、编排模式、通信与结果聚合。触发词："多智能体"、"智能体编排"、"Agent 团队"、orchestrator
 source:
   type: derived
   repo: skills-repo/ai-fullstack-engineer
