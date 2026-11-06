@@ -138,3 +138,23 @@
 4. **单选/复选控件的「选中」也别只看 class**：Next/Fusion 一类组件把 `aria-checked` 挂在
    `<label>` 上、文字挂在外层节点，`.innerText` 可能是空串——判态用 `aria-checked`/`input:checked`，
    取文字用它的宿主行容器，两者分别取再拼。
+
+## 8. 现场收尾：谁打开谁关闭（2026-11-06 用户明确反馈后固化）
+
+CDP 接管的是**用户看得见的浏览器窗口**，和本机无头跑不一样：脚本 `newPage()` 出来的标签页
+**不会因为断开连接而消失**，用户下次打开看到的是我们工作现场。一夜堆 20+ 个页面被投诉过一次，
+所以收尾和取数一样是任务的一部分。
+
+1. **规矩**：每个工具对自己 `newPage()` 出来的页面负责，跑完（含 `--dry`、含报错路径）关掉；
+   **复用了用户/别的脚本已经开着的页面则不要关**——那是别人的现场。
+   代码上就是 `let openedByUs = false` + `finally` 里按标志关。
+2. **`process.exit()` 会跳过 `finally`**：提前退出的分支（dry-run、校验失败）必须自己关页面再退，
+   否则等于没写收尾。
+3. **一次任务结束时清点**：`node tools/taobao-publish/tabs.mjs`（只列）→ `--close`（收自动化页面）。
+   `--close` 有保护：**不会把标签页关到剩 0 个**。
+4. ⚠️ **关到 0 个标签页 = 自己把 CDP 门锁上**：Chrome 一个页面都不剩时，
+   `chromium.connectOverCDP()` 报 `Browser context management is not supported`，
+   之后所有工具全部连不上（`/json/version` 依然是通的，容易被误判成端口坏了）。
+   恢复：`curl -X PUT "http://127.0.0.1:9222/json/new?https://myseller.taobao.com/home.htm/QnHome"`
+   （Chrome 111+ 该端点只收 **PUT**，GET 会 405），或者直接让用户在窗口里开一个标签页。
+5. 诊断顺序：连不上先 `curl /json` 看 `targets` 数量——**0 个就是被关光了**，不是端口/登录问题。
